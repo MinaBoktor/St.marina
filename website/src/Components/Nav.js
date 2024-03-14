@@ -8,7 +8,7 @@ const Nav = (props) => {
                 <section>
                     {props.width <= 1200 &&
                     <article>
-                        <h1>كشافة سانت مارينا</h1>
+                        <h1 style={{color:'white'}}>كشافة سانت مارينا</h1>
                         <img src={props.img}></img>
                     </article>}
                     <article>

@@ -5,6 +5,10 @@ import React from 'react';
 import { BrowserRouter } from 'react-router-dom';
 import {ChakraProvider, extendTheme, Center, Divider} from '@chakra-ui/react';
 import logo from './assets/logo.png';
+import Img1 from './assets/Img1.jpg';
+import Img2 from './assets/Img2.jpg';
+import Img3 from './assets/Img3.jpg';
+import Img4 from './assets/Img4.jpg';
 
 
 const colors = {
@@ -35,7 +39,7 @@ function App() {
   return (
     <BrowserRouter>
           <ChakraProvider theme={theme}>
-            <Hero>
+            <Hero bi={[{Img1}, {Img2}, {Img3}, {Img4}]}>
               <Nav img={logo} width={width} txt="mina"></Nav>
             </Hero>
           </ChakraProvider>
