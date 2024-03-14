@@ -1,6 +1,9 @@
 import './App.css';
+
 import Nav from './Components/Nav.js';
 import Hero from './Components/Hero.js';
+import Leaders from './Components/Leaders.js';
+import Landing from './Components/Landing.js';
 import React from 'react';
 import { BrowserRouter } from 'react-router-dom';
 import {ChakraProvider, extendTheme, Center, Divider} from '@chakra-ui/react';
@@ -9,6 +12,11 @@ import Img1 from './assets/Img1.jpg';
 import Img2 from './assets/Img2.jpg';
 import Img3 from './assets/Img3.jpg';
 import Img4 from './assets/Img4.jpg';
+import L1 from './assets/Leaders/1.jpg';
+import L2 from './assets/Leaders/2.jpg';
+import L3 from './assets/Leaders/3.jpg';
+import L4 from './assets/Leaders/4.jpg';
+import L5 from './assets/Leaders/5.jpg';
 
 
 const colors = {
@@ -39,9 +47,7 @@ function App() {
   return (
     <BrowserRouter>
           <ChakraProvider theme={theme}>
-            <Hero bi={[{Img1}, {Img2}, {Img3}, {Img4}]}>
-              <Nav img={logo} width={width} txt="mina"></Nav>
-            </Hero>
+            <Landing logo={logo} width={width}></Landing>
           </ChakraProvider>
     </BrowserRouter>
   );

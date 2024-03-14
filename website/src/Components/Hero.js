@@ -14,7 +14,7 @@ const Hero = (props) => {
       return () => clearInterval(interval);
     }, [img])
     return (
-    <header style={{backgroundImage:`url(${img})`, height:'650px', backgroundSize: "cover", backgroundRepeat: "no-repeat", backgroundPosition: "center",}}>
+    <header style={{backgroundImage:`url(${img})`, height:'695px', backgroundSize: "cover", backgroundRepeat: "no-repeat", backgroundPosition: "center",}}>
       {props.children}
     </header>
   );

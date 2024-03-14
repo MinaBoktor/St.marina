@@ -6,8 +6,19 @@ html, body {
   overflow-x: hidden;
 }
 
+body::-webkit-scrollbar {
+  display: none;
+}
+
+main {
+  width: 100%;
+  background-color: rgb(255, 237, 215);
+}
+
 header {
   transition: background-image 2s;
+  height: 700px;
+  width:100%;
 }
 
 header input[type="radio"] {
